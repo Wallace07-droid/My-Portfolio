@@ -139,7 +139,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex-shrink-0">
-                    <span class="text-emerald-400 font-semibold">Educational Tour Portfolio</span>
+                    <span class="text-emerald-400 font-semibold">My Portfolio</span>
                 </div>
                 
                 <div class="hidden md:block">
@@ -181,7 +181,7 @@
         </div>
     </nav>
 
-    <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="hero" class="min-h-screen pt-20 flex items-center justify-center relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-950 to-emerald-950/30"></div>
         <div class="absolute top-20 left-10 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl"></div>
         <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -202,15 +202,43 @@
                     class="w-36 h-36 rounded-full object-cover border-4 border-emerald-400 shadow-lg mb-4"
                 >
                 <h2 class="text-2xl md:text-3xl font-bold text-white">
-                    Justine James Betarmos
-                </h2>
-                <p class="text-emerald-400 text-sm md:text-base">
-                    BS Information Technology Student
-                </p>
+    Justine James Betarmos
+</h2>
+
+<p class="text-emerald-400 text-sm md:text-base mb-3">
+    BS Information Technology Student
+</p>
+
+<!-- About Me -->
+<p class="max-w-xl text-slate-300 text-sm md:text-base leading-relaxed mb-4">
+    I am a passionate BSIT student with a strong interest in technology, innovation, 
+    and real-world IT applications. I enjoy learning new tools, collaborating with teams,
+    and continuously improving my technical skills.
+</p>
+
+<!-- Skills -->
+<div class="flex flex-wrap justify-center gap-2">
+    <span class="px-3 py-1 text-sm bg-emerald-500/10 text-emerald-400 rounded-full border border-emerald-500/20">
+        HTML
+    </span>
+    <span class="px-3 py-1 text-sm bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20">
+        CSS
+    </span>
+    <span class="px-3 py-1 text-sm bg-purple-500/10 text-purple-400 rounded-full border border-purple-500/20">
+        JavaScript
+    </span>
+    <span class="px-3 py-1 text-sm bg-emerald-500/10 text-emerald-400 rounded-full border border-emerald-500/20">
+        Networking
+    </span>
+    <span class="px-3 py-1 text-sm bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20">
+        Cybersecurity
+    </span>
+</div>
+
             </div> 
 
             <h1 class="text-5xl md:text-7xl mb-6 gradient-text font-extrabold">
-                Educational Tour Portfolio
+                Educational Portfolio
             </h1>
             
             <p class="text-2xl md:text-3xl text-emerald-400 mb-8 font-semibold">
@@ -1019,8 +1047,10 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
-                        <img src="images/1(ap).jpg" 
-                             class="gallery-image w-full h-full object-cover">
+                        <img src="images/1(ap).jpg"
+                            onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
+
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1033,7 +1063,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/arrival.jpg" 
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1046,7 +1077,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/up.jpg"  
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1059,7 +1091,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/bai.jpg" 
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1072,7 +1105,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/rivan.jpg" 
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1085,7 +1119,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/101.jpg" 
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1098,7 +1133,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/dynata.jpg" 
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1111,7 +1147,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/mata1.jpg" 
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1124,7 +1161,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/somac.jpg" 
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1137,7 +1175,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/vista.jpg" 
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1150,7 +1189,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/tarsier.jpg"
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1163,7 +1203,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/floating.jpg"
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1176,7 +1217,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/forest.jpg"
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1189,7 +1231,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/choco.jpg" 
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1202,7 +1245,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/mirror.jpg" 
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1215,7 +1259,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/upj.jpg" 
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1228,7 +1273,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/rivanj.jpg" 
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1241,7 +1287,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/dynataj.jpg" 
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1254,7 +1301,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/mata.jpg" 
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1267,7 +1315,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/tarsierj.jpg" 
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1280,7 +1329,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/impsheet.jpg" 
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1293,7 +1343,8 @@
                 <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-800/50 border border-slate-700/50 hover-border transition-all">
                     <div class="aspect-[4/3] overflow-hidden">
                         <img src="images/cert.jpg" 
-                             class="gallery-image w-full h-full object-cover">
+                             onclick="openLightbox(this.src)"
+                                class="gallery-image w-full h-full object-cover cursor-pointer">
                     </div>
                     <div class="gallery-overlay absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent">
                         <div class="absolute bottom-0 left-0 right-0 p-4">
@@ -1326,13 +1377,13 @@
                         <div>
                             <h3 class="text-xl mb-3 text-emerald-400 font-semibold">Overall Experience</h3>
                             <p class="text-slate-300 leading-relaxed">
-                                The Cebu-Bohol Educational Tour was an transformative experience that bridged the gap between classroom 
-                                theory and real-world industry practice. Visiting five diverse organizations over four days provided 
-                                invaluable exposure to different facets of the IT industry—from startup incubation and cybersecurity 
-                                to data analytics, virtual reality, and emergency response systems. Each company visit revealed unique 
-                                approaches to solving problems using technology, reinforcing the versatility and impact of IT in modern 
-                                society. The tour exceeded expectations by not only showcasing technical innovations but also highlighting 
-                                the human elements of teamwork, communication, and professional growth that are essential in the workplace.
+                                The Cebu–Bohol Educational Tour was a highly transformative experience that successfully connected classroom
+                                 learning with real-world industry application. Visiting five different organizations over four days offered 
+                                 valuable insights into multiple areas of the IT field, including startup incubation, cybersecurity, data 
+                                 analytics, virtual reality, and emergency response systems. Each visit demonstrated distinct ways technology 
+                                 is used to address real-world challenges, emphasizing the flexibility and importance of IT in today’s society. 
+                                 Beyond technical innovation, the tour also highlighted the significance of teamwork, effective communication, 
+                                 and professional development—key qualities essential for success in the modern workplace.
                             </p>
                         </div>
                     </div>
@@ -1542,19 +1593,17 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-6 text-center">
-            <!-- Email -->
+
             <div class="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6">
                 <p class="text-emerald-400 font-semibold mb-2">Email</p>
                 <p class="text-slate-300">justine.betarmos@hcdc.edu.ph</p>
             </div>
 
-            <!-- Phone -->
             <div class="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6">
                 <p class="text-emerald-400 font-semibold mb-2">Phone</p>
                 <p class="text-slate-300">+639950310843</p>
             </div>
 
-            <!-- Location -->
             <div class="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6">
                 <p class="text-emerald-400 font-semibold mb-2">Location</p>
                 <p class="text-slate-300">Davao City,Philippines</p>
@@ -1616,6 +1665,36 @@
             </div>
         </div>
     </footer>
+
+    <!-- Image Lightbox -->
+<div id="lightbox"
+     class="fixed inset-0 bg-black/80 hidden items-center justify-center z-[999]">
+    
+    <button onclick="closeLightbox()"
+            class="absolute top-6 right-6 text-white text-3xl font-bold">
+        &times;
+    </button>
+
+    <img id="lightbox-img"
+         class="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl">
+</div>
+
+<script>
+function openLightbox(src) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = src;
+    lightbox.classList.remove('hidden');
+    lightbox.classList.add('flex');
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.add('hidden');
+    lightbox.classList.remove('flex');
+}
+</script>
+
     
 </body>
 </html>
